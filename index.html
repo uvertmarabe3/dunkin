@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkin' — Coffee & Donuts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="donut-loader donut-toy donut-sprinkle"></div>
+            <p class="preloader-text">Loading fresh donuts...</p>
+        </div>
+    </div>
+    <div class="page-frame">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg nav">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand logo">
+                        <span class="logo-text">Dunkin'</span>
+                        <span class="logo-tag">Coffee & Donuts</span>
+                    </a>
+                    <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto nav-links">
+                            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#rewards">Rewards</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 hero-content">
+                            <p class="hero-label">Since 1950</p>
+                            <h1 class="hero-title">
+                                <span class="line">Coffee.</span>
+                                <span class="line">Donuts.</span>
+                                <span class="line accent">Good times.</span>
+                            </h1>
+                            <p class="hero-sub">Fresh donuts and your favorite drinks, made with a smile.</p>
+                            <div class="hero-cta">
+                                <a href="#menu" class="btn btn-primary">See our menu</a>
+                                <a href="#rewards" class="btn btn-ghost">Join rewards</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 hero-visual text-lg-end">
+                            <div class="donuts-wrap">
+                                <div class="donut-toy donut-glazed"></div>
+                                <div class="donut-toy donut-chocolate"></div>
+                                <div class="donut-toy donut-strawberry"></div>
+                                <div class="donut-toy donut-maple"></div>
+                                <div class="donut-toy donut-sprinkle"></div>
+                                <div class="donut-toy donut-vanilla"></div>
+                                <div class="donut-toy donut-blueberry"></div>
+                                <div class="donut-toy donut-matcha"></div>
+                                <div class="donut-toy donut-glazed"></div>
+                                <div class="donut-toy donut-chocolate"></div>
+                                <div class="donut-toy donut-strawberry"></div>
+                                <div class="donut-toy donut-maple"></div>
+                                <div class="donut-toy donut-sprinkle"></div>
+                                <div class="donut-toy donut-vanilla"></div>
+                                <div class="donut-toy donut-blueberry"></div>
+                                <div class="donut-toy donut-matcha"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="menu" class="section menu-section">
+                <div class="container">
+                    <p class="section-label">Our favorites</p>
+                    <h2 class="section-title">Menu</h2>
+                    <div class="row menu-grid g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <article class="menu-card h-100" data-category="donuts">
+                                <div class="card-inner">
+                                    <div class="card-media" data-bs-toggle="tooltip" data-bs-placement="top" title="Classic glazed, soft and sweet.">
+                                        <img src="img/glazed.jpg" alt="Glazed donut">
+                                    </div>
+                                    <h3>Glazed Donut</h3>
+                                    <p>Classic glazed, soft and sweet. Always fresh.</p>
+                                    <span class="price">₱65.49</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <article class="menu-card h-100" data-category="donuts">
+                                <div class="card-inner">
+                                    <div class="card-media" data-bs-toggle="tooltip" data-bs-placement="top" title="Rich chocolate icing and smooth custard.">
+                                        <img src="img/Boston Kreme.jpg" alt="Boston Kreme donut">
+                                    </div>
+                                    <h3>Boston Kreme</h3>
+                                    <p>Chocolate on top, custard inside. A real treat.</p>
+                                    <span class="price">₱109.99</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <article class="menu-card h-100" data-category="coffee">
+                                <div class="card-inner">
+                                    <div class="card-media" data-bs-toggle="tooltip" data-bs-placement="top" title="Slow-steeped, smooth and bold.">
+                                        <img src="img/drink.png" alt="Cold brew coffee">
+                                    </div>
+                                    <h3>Cold Brew</h3>
+                                    <p>Smooth and refreshing. Perfect any time.</p>
+                                    <span class="price">₱130.99</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <article class="menu-card h-100" data-category="coffee">
+                                <div class="card-inner">
+                                    <div class="card-media" data-bs-toggle="tooltip" data-bs-placement="top" title="Creamy espresso over ice, lightly sweet.">
+                                        <img src="img/iced.png" alt="Iced latte">
+                                    </div>
+                                    <h3>Iced Latte</h3>
+                                    <p>Espresso and milk over ice. So good.</p>
+                                    <span class="price">₱120.49</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <article class="menu-card h-100" data-category="donuts">
+                                <div class="card-inner">
+                                    <div class="card-media" data-bs-toggle="tooltip" data-bs-placement="top" title="Vanilla icing covered in rainbow sprinkles.">
+                                        <img src="img/sprinkle.png" alt="Sprinkle donut">
+                                    </div>
+                                    <h3>Sprinkle Donut</h3>
+                                    <p>Rainbow sprinkles and a big smile.</p>
+                                    <span class="price">₱150.79</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <article class="menu-card h-100" data-category="coffee">
+                                <div class="card-inner">
+                                    <div class="card-media" data-bs-toggle="tooltip" data-bs-placement="top" title="Chocolate, espresso and steamed milk.">
+                                        <img src="img/mocha.png" alt="Mocha drink">
+                                    </div>
+                                    <h3>Mocha</h3>
+                                    <p>Chocolate and espresso. Rich and cozy.</p>
+                                    <span class="price">₱99.99</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="section gallery-section">
+                <div class="container">
+                    <p class="section-label">Sweet gallery</p>
+                    <h2 class="section-title">Best Selling</h2>
+
+                    <div id="donutCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="4500">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#donutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#donutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#donutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-image-frame">
+                                    <img src="img/1.jpg" class="d-block w-100" alt="Glazed donut with coffee">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image-frame">
+                                    <img src="img/2.jpg" class="d-block w-100" alt="Chocolate donut with sprinkles">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image-frame">
+                                    <img src="img/3.jpg" class="d-block w-100" alt="Colorful assorted donuts">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#donutCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#donutCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rewards" class="section rewards-section">
+                <div class="container">
+                    <div class="row rewards-split align-items-center">
+                        <div class="col-lg-8 rewards-content">
+                            <p class="section-label">Rewards</p>
+                            <h2 class="section-title">Earn points. Get free treats.</h2>
+                            <p class="rewards-desc">Join our rewards program. Every purchase earns points. Get a free birthday treat and member perks.</p>
+                            <ul class="rewards-list">
+                                <li><span class="check">✓</span> 5 points per $1 spent</li>
+                                <li><span class="check">✓</span> Free birthday treat</li>
+                                <li><span class="check">✓</span> Member-only offers</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Sign up free</a>
+                        </div>
+                        <div class="col-lg-4 rewards-visual text-center">
+                            <div class="rewards-card">
+                                <div class="rewards-card-inner">
+                                    <span class="rewards-points">250</span>
+                                    <span class="rewards-label">POINTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="locations" class="section locations-section">
+                <div class="container">
+                    <p class="section-label">Find us</p>
+                    <h2 class="section-title">Locations</h2>
+
+                    <div class="locations-grid">
+                        <div class="map-frame" aria-label="Map showing Dunkin' branches near you">
+                            <iframe title="Dunkin' locations map" src="https://www.google.com/maps?q=Dunkin%27&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <div class="locations-info">
+                            <p class="locations-desc">See real Dunkin’ branches near you on the map. Tap a pin for directions and hours.</p>
+                            <div class="locations-actions">
+                                <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Dunkin%27">Open in Google Maps</a>
+                                <a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Dunkin%27%20near%20me">Find nearest</a>
+                            </div>
+                            <div class="locations-note">
+                                <span class="dot"></span>
+                                <span>Map results are based on your area.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Toast container -->
+            <div id="toast" class="toast"></div>
+
+            <section id="contact" class="section contact-section">
+                <div class="container">
+                    <p class="section-label">Say hello</p>
+                    <h2 class="section-title">Contact us</h2>
+                    <!-- Only ONE form tag -->
+                    <form class="contact-form" id="contactForm">
+                        <div class="row form-row">
+                            <div class="col-md-6 form-group mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="you@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required placeholder="What's on your mind?"></textarea>
+                        </div>
+                        <div class="form-feedback" id="formFeedback" role="alert"></div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- EmailJS Library -->
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <!-- Your separate JS file -->
+            <script src="submit.js"></script>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-grid align-items-center justify-content-between">
+                    <div class="col-md-6 footer-brand">
+                        <span class="logo-text">Dunkin'</span>
+                        <p>Coffee & donuts. Est. 1950.</p>
+                    </div>
+                    <div class="col-md-6 footer-links">
+                        <a href="#">Careers</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+                <p class="footer-copy">© 2025 Dunkin' — A friendly clone. Not affiliated with Dunkin' Brands.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- .page-frame -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
