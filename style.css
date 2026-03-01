@@ -1183,3 +1183,10 @@ body {
         transform: translateY(-20px);
     }
 }
+
+#donutViewer {
+    width: 100%;
+    height: 500px;
+    /* 🔥 VERY IMPORTANT */
+    position: relative;
+}
