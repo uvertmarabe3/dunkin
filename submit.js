@@ -74,8 +74,7 @@ const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 // LOAD STL
 const loader = new THREE.STLLoader();
-loader.load('donut.stl', function(geometry) {
-
+loader.load('dognut.stl', function(geometry) {
     const material = new THREE.MeshStandardMaterial({
         color: 0xff69b4,
         metalness: 0.2,
