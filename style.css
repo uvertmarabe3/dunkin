@@ -89,6 +89,71 @@ body {
     padding: 20px;
 }
 
+/* Default theme values (light) */
+:root,
+body {
+    --bg-warm: #fef6eb;
+    --bg-cream: #fffbf5;
+    --bg-card: #ffffff;
+    --frame: #e8d5c4;
+    --frame-dark: #d4b89a;
+    --accent-orange: #e85d2b;
+    --accent-pink: #e8a0b0;
+    --accent-brown: #5c4033;
+    --text: #3d2c29;
+    --text-soft: #6b5344;
+    --font-display: 'Fredoka', sans-serif;
+    --font-body: 'Nunito', sans-serif;
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+    --shadow-soft: 0 4px 20px rgba(92, 64, 51, 0.08);
+    --shadow-card: 0 8px 30px rgba(92, 64, 51, 0.1);
+    --shadow-hover: 0 12px 40px rgba(92, 64, 51, 0.12);
+}
+
+/* Dark mode theme (toggled with body.dark-mode) */
+body.dark-mode {
+    --bg-warm: #202124;
+    --bg-cream: #26272b;
+    --bg-card: #2c2f33;
+    --frame: #3a3d44;
+    --frame-dark: #474b53;
+    --accent-orange: #ff914d;
+    --accent-pink: #ff8fb7;
+    --accent-brown: #e0d2c4;
+    --text: #f5f5f5;
+    --text-soft: #c0c0c0;
+    background: var(--bg-warm);
+    color: var(--text);
+}
+
+body.dark-mode .section:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+body.dark-mode .toast.success {
+    background-color: #2e7d32;
+}
+
+body.dark-mode .toast.error {
+    background-color: #c62828;
+}
+
+/* Dark mode toggle button */
+.btn-theme-toggle {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.btn-theme-toggle:focus-visible {
+    outline: 2px solid var(--accent-orange);
+    outline-offset: 2px;
+}
+
 
 /* ===== Page frame (toy / picture frame) ===== */
 

@@ -11,6 +11,7 @@
     const navbarCollapse = document.getElementById('navbarNav');
     const contactForm = document.querySelector('.contact-form');
     const preloader = document.getElementById('preloader');
+    const themeToggle = document.getElementById('themeToggle');
 
     // ----- Hide preloader once page is fully loaded -----
     window.addEventListener('load', function() {
@@ -18,6 +19,35 @@
             preloader.classList.add('preloader--hidden');
         }
     });
+
+    // ----- Dark mode toggle -----
+    if (themeToggle) {
+        const storedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        function applyTheme(isDark) {
+            if (isDark) {
+                document.body.classList.add('dark-mode');
+                themeToggle.textContent = 'Light mode';
+            } else {
+                document.body.classList.remove('dark-mode');
+                themeToggle.textContent = 'Dark mode';
+            }
+        }
+
+        // Initial theme
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            applyTheme(true);
+        } else {
+            applyTheme(false);
+        }
+
+        themeToggle.addEventListener('click', function() {
+            const isDarkNow = !document.body.classList.contains('dark-mode');
+            applyTheme(isDarkNow);
+            localStorage.setItem('theme', isDarkNow ? 'dark' : 'light');
+        });
+    }
 
     // ----- Bootstrap collapse: sync .is-active on our toggler (hamburger → X) -----
     if (navToggle && navbarCollapse) {
